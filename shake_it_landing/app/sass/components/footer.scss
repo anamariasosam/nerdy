@@ -1,0 +1,29 @@
+.footer {
+
+	&__brandname {
+		font-size: $xsmall_text - 0.2;
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		left: 5%;
+	}
+	&__container {
+		color: $gray-color;
+		padding: 1% 0;
+	}
+	&__social {
+
+		& {
+			display: inline-block;
+			position: absolute;
+			right: 10%;
+		}
+		
+		&-twitter, &-facebook, &-google, &-youtube {
+			display: inline-block;
+			font-size: $small_text;
+			margin-left: 20px;
+		}
+	}
+	
+}

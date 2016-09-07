@@ -1,0 +1,62 @@
+.header {
+
+
+	&__bg {
+		// -webkit-filter: blur(10px);
+		// background-image: url('../images/header.jpg');
+		// background-size: cover;
+		// filter: blur(10px);
+		height: 105%;
+		position: absolute;
+		width: 106%;
+		z-index: -1;
+		left: -14px;
+		top: -18px;
+		background-color: $orange_color;
+	}
+
+	&__boxes {
+		position: static;
+	}
+
+	&__container {
+		height: 550px;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__deck {
+		font-size: $medium_text;
+		margin-top: 10px;
+
+		&_info {
+			font-size: $small_text;
+			margin: 20px 0;
+		}
+	}
+
+	&__headline {
+		font-family: 'Bree Serif', serif;
+		font-size: $large_text;
+		color: $primary_color;
+		text-transform: uppercase;
+		text-shadow: 3px 0 lighten(black, 40);
+	}
+
+	&__left {
+		float: left;
+		width: 60%;
+
+		&-info {
+			padding: 15% 13%;
+			color: $white;
+			line-height: 1.25;
+		}	
+	}
+
+	&__right {
+		float: right;
+		width: 40%;
+	}
+}

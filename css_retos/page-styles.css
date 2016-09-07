@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 40px 0;
+	font-size: 1.3em;
+	font-family: sans-serif;
+}
+.nav {
+    margin: 10px auto;
+	padding: 20px;
+	width: 80%;
+	border: 2px solid #FC7600;
+	border-radius: 10px;
+	background: #FF9334;
+	list-style-type: none;
+
+}
+li {
+	margin: 10px;
+	border-radius: 10px;
+	background: #FFCA45;
+	color: #FFF;
+}
+.nav a {
+	display: block;
+	padding: 15px;
+	color: inherit;
+	text-decoration: none;
+}

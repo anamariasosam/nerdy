@@ -1,0 +1,31 @@
+.benefits {
+
+
+	&__container {
+		width: 100%;
+	    margin: 0 0 30px 0;
+	    text-align: center;
+	    height: auto;
+	}
+
+	&__figure {
+		display: inline-block;
+		padding: 0 10px;
+	    vertical-align: text-top;
+		
+	}
+	&__figcaption {
+		width: 100px;
+		height: auto;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	&__headline {
+		color: $orange_color;
+	}
+
+	&__icon {
+		width: 80px;
+	}
+}

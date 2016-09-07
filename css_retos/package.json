@@ -1,0 +1,24 @@
+{
+  "name": "css_retos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "~3.4.8",
+    "gulp": "^3.9.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-csso": "~0.1.8",
+    "gulp-jade": "~0.3.0",
+    "gulp-livereload": "~0.2.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "~0.1.0",
+    "gulp-util": "~2.2.12",
+    "marked": "~0.3.0",
+    "tiny-lr": "0.0.5"
+  }
+}

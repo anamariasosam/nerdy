@@ -1,0 +1,38 @@
+.landing__email {
+
+
+	&-input {
+		border-radius: 5px;
+		border: none;
+		height: 35px;
+		outline: 0;
+		text-align: center;
+		width: 210px;
+		color: gray;
+	}
+
+	&-btn {
+		background-color: $primary_color;
+		color: $white;
+		border: 1px solid $primary_color;
+		
+		&:hover {
+			background-color: $white;
+			border: 1px solid $primary_color;
+			color: $primary_color;
+		}
+
+		@media (max-width: 360px)  {
+
+			& {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&-invitation {
+		font-size: $xsmall-text;
+		margin-top: 9px;
+	}
+}
+

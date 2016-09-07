@@ -1,0 +1,14 @@
+- var benefits = ["Reducen la tensión muscular.", "Disminuyen el estrés y la sensación de fatiga.","Mejoran la concentración y la atención.","Mejoran la postura"];
+.benefits__container
+    h2.benefits__headline Beneficios
+    mixin benefit(text)
+      figure.benefits__figure
+        img.benefits__icon&attributes(attributes)
+        figcaption.benefits__figcaption
+            p= text  
+          
+
+    +benefit(benefits[0])(src="images/1.png")
+    +benefit(benefits[1])(src="images/2.png")
+    +benefit(benefits[2])(src="images/4.png")
+    +benefit(benefits[3])(src="images/3.png")

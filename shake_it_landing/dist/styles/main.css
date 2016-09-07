@@ -1,0 +1,452 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+/* line 4, app/sass/components/iphone.scss */
+.header__iphone {
+  margin: 0 30px;
+}
+/* line 8, app/sass/components/iphone.scss */
+.header__iphone-figure {
+  position: relative;
+  overflow: hidden;
+  bottom: -70px;
+}
+/* line 16, app/sass/components/iphone.scss */
+.header__iphone-frame {
+  background-color: #333;
+  background: -moz-linear-gradient(bottom left, #111, #222);
+  background: -webkit-linear-gradient(bottom left, #111, #222);
+  background: linear-gradient(bottom left, #111, #222);
+  background: transparent -moz-linear-gradient(left bottom, #111, #222) repeat scroll 0% 0%;
+  height: 71%;
+  overflow: hidden;
+  position: absolute;
+  top: 16%;
+  width: 194px;
+  margin-left: 23px;
+}
+@media (min-width: 690px) and (max-width: 2800px) {
+  /* line 30, app/sass/components/iphone.scss */
+  .header__iphone-frame {
+    width: 207px;
+    margin-left: 23px;
+  }
+}
+@media (max-width: 680px) and (min-width: 620px) {
+  /* line 36, app/sass/components/iphone.scss */
+  .header__iphone-frame {
+    width: 180px;
+    margin-left: 22px;
+  }
+}
+@media (max-width: 700px) and (min-width: 600px) {
+  /* line 43, app/sass/components/iphone.scss */
+  .header__iphone-frame {
+    width: 170px;
+    margin-left: 20px;
+  }
+  /* line 48, app/sass/components/iphone.scss */
+  .header__iphone-frame-afroman {
+    position: absolute;
+    bottom: -468px;
+    background-size: cover;
+    left: 0px;
+  }
+}
+/* line 59, app/sass/components/iphone.scss */
+.header__iphone-frame-afroman {
+  position: absolute;
+  bottom: -468px;
+  background-size: cover;
+  left: -40px;
+}
+/* line 68, app/sass/components/iphone.scss */
+.header__iphone-frame-discoBall {
+  position: absolute;
+  left: 102px;
+  top: -230px;
+}
+/* line 74, app/sass/components/iphone.scss */
+.header__iphone-frame-discoBall-ball, .header__iphone-frame-discoBall-light {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 99px;
+  left: 50%;
+  margin-left: -50px;
+}
+/* line 85, app/sass/components/iphone.scss */
+.header__iphone-frame-discoBall-ball {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation: rotateDiscoBall 18s linear infinite;
+  animation: rotateDiscoBall 18s linear infinite;
+}
+/* line 92, app/sass/components/iphone.scss */
+.header__iphone-frame-discoBall-ball--middle {
+  height: 100%;
+  border-radius: 100%;
+  background-color: #111;
+  position: absolute;
+  background: -webkit-linear-gradient(top, #111, #333);
+  background: -moz-linear-gradient(top, #111, #333);
+  background: linear-gradient(top, #111, #333);
+  -webkit-animation: rotateDiscoBallMiddle 18s linear infinite;
+  animation: rotateDiscoBallMiddle 18s linear infinite;
+}
+/* line 105, app/sass/components/iphone.scss */
+.header__iphone-frame-discoBall-hanger {
+  border-left: 4px solid #95a5a6;
+  height: 100px;
+}
+/* line 110, app/sass/components/iphone.scss */
+.header__iphone-frame-discoBall-light {
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+  -webkit-filter: blur(20px);
+}
+/* line 118, app/sass/components/iphone.scss */
+.header__iphone-frame-headline {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Bree Serif', serif;
+}
+/* line 127, app/sass/components/iphone.scss */
+.header__iphone_image {
+  width: 250px;
+  bottom: -4px;
+  position: relative;
+}
+@-webkit-keyframes rotateDiscoBall {
+  0% {
+    -webkit-transform: rotateX(90deg) rotateZ(0deg) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(90deg) rotateZ(360deg) rotate(0deg);
+  }
+}
+@keyframes rotateDiscoBall {
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateZ(360deg) rotate(0deg);
+  }
+}
+@-webkit-keyframes rotateDiscoBallMiddle {
+  0% {
+    -webkit-transform: rotateX(90deg) rotateY(0deg) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(90deg) rotateY(-360deg) rotate(0deg);
+  }
+}
+@keyframes rotateDiscoBallMiddle {
+  0% {
+    transform: rotateX(90deg) rotateY(0deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateY(-360deg) rotate(0deg);
+  }
+}
+@-webkit-keyframes reflect {
+  0% {
+    -webkit-filter: brightness(60%);
+  }
+  50% {
+    -webkit-filter: brightness(120%);
+  }
+  100% {
+    -webkit-filter: brightness(90%);
+  }
+}
+@keyframes reflect {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 168, app/sass/components/iphone.scss */
+.square {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 6px;
+  height: 6px;
+  transform: rotateX(90deg) rotateY(0deg) translateZ(0px);
+}
+
+/* line 4, app/sass/components/header.scss */
+.header__bg {
+  height: 105%;
+  position: absolute;
+  width: 106%;
+  z-index: -1;
+  left: -14px;
+  top: -18px;
+  background-color: #ff7c4c;
+}
+/* line 18, app/sass/components/header.scss */
+.header__boxes {
+  position: static;
+}
+/* line 22, app/sass/components/header.scss */
+.header__container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 29, app/sass/components/header.scss */
+.header__deck {
+  font-size: 1.6em;
+  margin-top: 10px;
+}
+/* line 33, app/sass/components/header.scss */
+.header__deck_info {
+  font-size: 1.4em;
+  margin: 20px 0;
+}
+/* line 39, app/sass/components/header.scss */
+.header__headline {
+  font-family: 'Bree Serif', serif;
+  font-size: 4em;
+  color: #5AC6FF;
+  text-transform: uppercase;
+  text-shadow: 3px 0 #666666;
+}
+/* line 47, app/sass/components/header.scss */
+.header__left {
+  float: left;
+  width: 60%;
+}
+/* line 51, app/sass/components/header.scss */
+.header__left-info {
+  padding: 15% 13%;
+  color: #fff;
+  line-height: 1.25;
+}
+/* line 58, app/sass/components/header.scss */
+.header__right {
+  float: right;
+  width: 40%;
+}
+
+/* line 4, app/sass/components/email.scss */
+.landing__email-input {
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  outline: 0;
+  text-align: center;
+  width: 210px;
+  color: gray;
+}
+/* line 14, app/sass/components/email.scss */
+.landing__email-btn {
+  background-color: #5AC6FF;
+  color: #fff;
+  border: 1px solid #5AC6FF;
+}
+/* line 19, app/sass/components/email.scss */
+.landing__email-btn:hover {
+  background-color: #fff;
+  border: 1px solid #5AC6FF;
+  color: #5AC6FF;
+}
+@media (max-width: 360px) {
+  /* line 27, app/sass/components/email.scss */
+  .landing__email-btn {
+    margin-top: 10px;
+  }
+}
+/* line 33, app/sass/components/email.scss */
+.landing__email-invitation {
+  font-size: 1.2em;
+  margin-top: 9px;
+}
+
+@media (max-width: 500px) {
+  /* line 5, app/sass/layouts/header_mx.scss */
+  .header__container {
+    height: 500px;
+    width: 100%;
+  }
+  /* line 10, app/sass/layouts/header_mx.scss */
+  .header__deck {
+    display: none;
+  }
+  /* line 16, app/sass/layouts/header_mx.scss */
+  .header__iphone {
+    display: inline-block;
+    margin: 0;
+  }
+  /* line 21, app/sass/layouts/header_mx.scss */
+  .header__iphone-frame {
+    width: 206px;
+  }
+  /* line 26, app/sass/layouts/header_mx.scss */
+  .header__headline {
+    text-align: center;
+    font-size: 50px;
+  }
+  /* line 31, app/sass/layouts/header_mx.scss */
+  .header__left {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  /* line 35, app/sass/layouts/header_mx.scss */
+  .header__left-info {
+    padding: 0 20px 0;
+    text-align: center;
+  }
+  /* line 41, app/sass/layouts/header_mx.scss */
+  .header__right {
+    width: 100%;
+    margin-top: -125px;
+    text-align: center;
+  }
+  /* line 47, app/sass/layouts/header_mx.scss */
+  .header__email {
+    display: none;
+  }
+}
+@media (min-width: 500px) and (max-width: 650px) {
+  /* line 57, app/sass/layouts/header_mx.scss */
+  .header__container {
+    height: 850px;
+    width: 100%;
+  }
+  /* line 64, app/sass/layouts/header_mx.scss */
+  .header__iphone {
+    display: inline-block;
+    margin: 0;
+  }
+  /* line 69, app/sass/layouts/header_mx.scss */
+  .header__iphone-frame {
+    width: 209px;
+  }
+  /* line 74, app/sass/layouts/header_mx.scss */
+  .header__headline {
+    text-align: center;
+    font-size: 50px;
+  }
+  /* line 79, app/sass/layouts/header_mx.scss */
+  .header__left {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  /* line 83, app/sass/layouts/header_mx.scss */
+  .header__left-info {
+    padding: 0 20px 0;
+    text-align: center;
+  }
+  /* line 89, app/sass/layouts/header_mx.scss */
+  .header__right {
+    width: 100%;
+    margin-top: -125px;
+    text-align: center;
+  }
+  /* line 95, app/sass/layouts/header_mx.scss */
+  .header__email {
+    display: none;
+  }
+}
+@media (min-width: 650px) and (max-width: 750px) {
+  /* line 106, app/sass/layouts/header_mx.scss */
+  .header__iphone {
+    display: inline-block;
+    margin: 0;
+  }
+  /* line 111, app/sass/layouts/header_mx.scss */
+  .header__iphone-frame {
+    width: 209px;
+  }
+  /* line 116, app/sass/layouts/header_mx.scss */
+  .header__email {
+    display: none;
+  }
+}
+/* line 4, app/sass/components/benefits.scss */
+.benefits__container {
+  width: 100%;
+  margin: 0 0 30px 0;
+  text-align: center;
+  height: auto;
+}
+/* line 11, app/sass/components/benefits.scss */
+.benefits__figure {
+  display: inline-block;
+  padding: 0 10px;
+  vertical-align: text-top;
+}
+/* line 17, app/sass/components/benefits.scss */
+.benefits__figcaption {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 24, app/sass/components/benefits.scss */
+.benefits__headline {
+  color: #ff7c4c;
+}
+/* line 28, app/sass/components/benefits.scss */
+.benefits__icon {
+  width: 80px;
+}
+
+/* line 2, app/sass/components/suscribe.scss */
+.suscribe__container {
+  background-color: #5AC6FF;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+/* line 11, app/sass/components/suscribe.scss */
+.suscribe__container .landing__email-btn, .suscribe__container .landing__email-btn:hover {
+  background-color: #fff;
+  border: 1px solid #5AC6FF;
+  color: #5AC6FF;
+}
+
+/* line 3, app/sass/components/footer.scss */
+.footer__brandname {
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  left: 5%;
+}
+/* line 10, app/sass/components/footer.scss */
+.footer__container {
+  color: #95a5a6;
+  padding: 1% 0;
+}
+/* line 16, app/sass/components/footer.scss */
+.footer__social {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+}
+/* line 22, app/sass/components/footer.scss */
+.footer__social-twitter, .footer__social-facebook, .footer__social-google, .footer__social-youtube {
+  display: inline-block;
+  font-size: 1.4em;
+  margin-left: 20px;
+}
+
+/* line 12, app/sass/main.scss */
+body {
+  font-family: 'Nunito', sans-serif;
+}

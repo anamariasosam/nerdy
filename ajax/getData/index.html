@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax</title>
+</head>
+<body>
+	<h1>Ajax</h1>
+	<table border="1">
+		<thead>
+			<tr id="types">
+				<th >First Name</th>
+				<th >Last Name</th>
+				<th >Age</th>
+				<th >Id	</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<form role="form" id="person_form">
+		<fieldset>
+			<input type="text" placeholder="name" id="name_value">
+			<input type="text" placeholder="last" id="last_value">
+			<input type="text" placeholder="age" id="age_value">
+			<input type="text" placeholder="id" id="id_value">
+			<input type="submit" id="sendBtn">
+		</fieldset>
+	</form>
+	<script type="template/custom" id="tmp">
+		<tr id="row"> 
+		 	<td> {{firstName}} </td>
+			<td> {{lastName}} </td> 
+			<td> {{age}} </td>
+			<td> {{id}} </td> 
+		</tr>
+	</script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		var key,value;
+		$.ajax({
+			url: 'data.json',
+			dataType: 'json',
+			success	: function (data) {	
+				populateTable(data);
+			}
+		});
+		
+		function populateTable (response) {
+			var template = $('#tmp').html();
+			response.forEach( function(val, index) {
+				var data = template
+							.replace("{{firstName}}", val.name.first )
+							.replace("{{lastName}}", val.name.last )
+							.replace("{{age}}", val.age )
+							.replace("{{id}}", index);
+				$('tbody').append(data);				
+			});
+
+		}
+
+		$(document).ready(function($) {
+			var template = $('#tmp').html();
+			for (var i = localStorage.clickcount; i > 0; i--) {
+				var data = template
+							.replace("{{firstName}}", localStorage.getItem('name' + i) )
+							.replace("{{lastName}}", localStorage.getItem('last' + i))
+							.replace("{{age}}", localStorage.getItem('age' + i) )
+							.replace("{{id}}", localStorage.getItem('id' + i));
+				$('tbody').append(data);	
+			}
+		});
+		
+		$('#person_form').on('submit', function(event) {
+			event.preventDefault();
+			// if (localStorage.clickcount) {
+	  //           localStorage.clickcount = Number(localStorage.clickcount) + 1;
+	  //       } else {
+	  //           localStorage.clickcount = 1;
+	  //       }
+
+			// var person = {
+			// 	nameVal : $('#name_value').val(),
+			// 	lastVal : $('#last_value').val(),
+			// 	ageVal : $('#age_value').val(),
+			// 	idVal : $('#id_value').val()
+			// }
+
+			// localStorage.setItem('name' + localStorage.clickcount , person.nameVal);
+			// localStorage.setItem('last' + localStorage.clickcount, person.lastVal);
+			// localStorage.setItem('age' + localStorage.clickcount, person.ageVal);
+			// localStorage.setItem('id' + localStorage.clickcount, person.idVal);
+
+			var people = [];
+			var person = {
+							nameVal : $('#name_value').val(),
+							lastVal : $('#last_value').val(),
+							ageVal : $('#age_value').val(),
+							idVal : $('#id_value').val()
+						}
+
+			people.push(person);
+			localStorage.setItem('people', people);
+			this.reset();
+			
+		});
+
+	</script>
+</body>
+</html>
